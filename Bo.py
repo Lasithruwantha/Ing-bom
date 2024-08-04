@@ -21,8 +21,8 @@ if (tool==int(2)):
   if("ing" == endtxt):
     print("\033[1;33m" +word[:-3])
   else:
-    print(word)
-  print("\003[1;32m ×××tanks×××")
+    print("\033[1;33m" +word)
+    print("\003[1;32m×××tanks×××")
 if (tool==int(1)):
   print ('''\033[0;32m______                 _     
   | ___ \               | |    
@@ -35,5 +35,6 @@ if (tool==int(1)):
   x=int(input("Enter your types:") )
   for z in range(k):
     print(f"\003[0;33m bum",k,(k) * ".")
+
 else:
     print("\033[1;31m try again")
